@@ -37,7 +37,13 @@ function loadtoc(a)
 			{
 				c=c.substring(0,f)}postLabels[ii]=c;postTitle[ii]=e;postDate[ii]=m;postUrl[ii]=j;postLagu[ii]=o;if(h<10){postBaru[ii]=true
 				}
-				else{postBaru[ii]=false}ii=ii+1}}}}}b();sortBy="titleasc";
+				else{postBaru[ii]=false}ii=ii+1
+					    }
+		}
+	}
+		    }
+}
+b();sortBy="titleasc";
 				sortPosts(sortBy);
 				sortlabel();tocLoaded=true;displayToc2();
 				document.write('</br><a href="http://anditoblog.blogspot.com" style="font-size: 8px; text-decoration:none; color: #616469;">anditoblog</a>')
@@ -160,7 +166,7 @@ function sortPosts2(d,c){function e(f,h)
 					firsti=a;do{document.write("<li>");
 					document.write('<a href="'+postUrl[a]+'">'+postTitle[a]+"</a>");if(postBaru[a]==true)
 					{
-						document.write(' - <strong><em><span style="color:#fff;font-size:11px;background:#FF0000;padding:1px 6px 3px 6px;line-height:normal;float:right;border-radius:2px;">New !!</span> </em></strong>')
+						document.write(' - <strong><em><span style="color:#fff;font-size:11px;background:#FF0000;padding:1px 6px 3px 6px;border-radius:2px;">New !</span> </em></strong>')
 					}
 					document.write("</li>");a=a+1}while(po
 	
